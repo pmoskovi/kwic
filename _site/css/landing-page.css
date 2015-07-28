@@ -27,11 +27,12 @@ body, h1, h2, h3, h4, h5, h6 {
   color: #f8f8f8;
   color: #f47c31;
   color: #f85d36;
+  color: #f47c31;
 
   background-color: #4c89b1;
   background-image:
   /* linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), */
-  url(../img/cloud-stairs.png);
+  url(http://www.bettererpsystems.com/assets/images/clouderp/topbanner.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -60,6 +61,21 @@ body, h1, h2, h3, h4, h5, h6 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   color: #f8f8f8;
 }
+.product-message {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  color: #f8f8f8;
+  font-size: 1.2em;
+}
+
+.product-message > a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.product-message > a:hover {
+  color: #f47c31;
+}
+
 @media(max-width:767px) {
   .intro-message {
     padding-bottom: 15%;
@@ -159,5 +175,8 @@ p.copyright {
   align-items: center;
 }
 .icon-container {
-   background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.cloud-logo {
+  padding-top:10px;
 }
