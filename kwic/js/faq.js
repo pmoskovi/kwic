@@ -20,8 +20,8 @@ var faqData = {
       question: 'How do I configure the on-premise Kaazing WebSocket Intercloud Connect for Active Directory?',
       answer: '<ul><li>Log in to your on-premise Ubuntu server</li><li>From the cloud gateway landing page copy/paste the curl cmd to your on-premise terminal window</li><li>Execute the curl command and follow the instructions.</li>'
     }, {
-      question: 'During installation I entered the wrong login or password, while retrieving the trust store. Now what?',
-      answer: 'After three attempts the login process will fail and you will be given the option to enter new credentials or quit from the trust store retrieval function.'
+      question: 'During installation I entered the wrong login or password, while retrieving the truststore. Now what?',
+      answer: 'After three attempts the login process will fail and you will be given the option to enter new credentials or quit from the truststore retrieval function.'
     }, {
       question: 'How can I review the installation script?',
       answer: ''
@@ -32,8 +32,8 @@ var faqData = {
   }, {
     section: 'Security',
     faqList: [{
-      question: 'What is the trust store, and why do I need one?',
-      answer: '<ul><li>The trust store is a file containing certificates for hosts and certificate authorities trusted by the KAAZING Gateway.</li><li>In order to connect to a back-end server using TLS/SSL, the KAAZING Gateway must have the certificate for the host name of the back-end server in the trust store.</li></ul>'
+      question: 'What is the truststore, and why do I need one?',
+      answer: '<ul><li>The truststore is a file containing certificates for hosts and certificate authorities trusted by the KAAZING Gateway.</li><li>In order to connect to a back-end server using TLS/SSL, the KAAZING Gateway must have the certificate for the host name of the back-end server in the truststore.</li></ul>'
     }, {
       question: 'How do I configure SSL/TLS between the on-premise KAAZING gateway and my Active Directory server?',
       answer: ''
