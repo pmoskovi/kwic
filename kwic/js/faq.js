@@ -54,6 +54,41 @@ var faqData = {
   }]
 };
 
+// Takes a string and makes it URL-safe. The string is intended to be
+// the FAQ title, so it can be converted in an anchor name that is
+// URL-friendly.
+//
+var maxAnchorNameLength = 70;
+var buildAnchorName = function(title) {
+
+  // Convert spaces to hyphens.
+  var anchorName = title.replace(/ /g, '-');
+
+  // Remove other special characters that might appear in a question.
+  anchorName = anchorName.replace(/[\?\.\!,\'"@#$%^\&\*\(\)\[\]:;<>\/\\]/g, '');
+
+  // Make sure it's not too long.
+  if (anchorName.length > maxAnchorNameLength) {
+    anchorName = anchorName.substring(0, maxAnchorNameLength);
+
+    // Cut the string at the last full word. But only if there is a hyphen.
+    var lastHyphenPos = anchorName.lastIndexOf('-');
+    if (lastHyphenPos > 0) {
+      anchorName = anchorName.substring(0, lastHyphenPos);
+    }
+  }
+
+  // Don't end on a hypen.
+  while (anchorName.substr(anchorName.length-1) == '-') {
+    anchorName = anchorName.substring(0, anchorName.length-1);
+  }
+
+  // Encode the string to something URL-friendly.
+  anchorName = encodeURIComponent(anchorName);
+
+  return anchorName;
+}
+
 var buildFaqList = function(faqData) {
   var sectionName, question, answer;
 
@@ -71,7 +106,11 @@ var buildFaqList = function(faqData) {
 
       var questionItem = document.createElement('li');
       // questionItem.className = "";
-      questionItem.innerHTML = faqData.sectionList[i].faqList[j].question;
+      questionLink = document.createElement('a');
+      questionLink.appendChild(document.createTextNode(faqData.sectionList[i].faqList[j].question));
+      questionLink.href = "#" + buildAnchorName(faqData.sectionList[i].faqList[j].question)
+      questionItem.appendChild(questionLink);
+//      questionItem.innerHTML = faqData.sectionList[i].faqList[j].question;
 
       // questionPanelHeading.appendChild(questionItem);
       // questionPanel.appendChild(questionPanelHeading);
@@ -97,6 +136,10 @@ var buildFaqList = function(faqData) {
 
       var questionPanel = document.createElement('div');
       questionPanel.className = 'panel panel-default panel-faq';
+      questionAnchor = document.createElement('a');
+      questionAnchor.className = 'anchor';
+      questionAnchor.setAttribute('name', buildAnchorName(faqData.sectionList[i].faqList[j].question));
+      questionPanel.appendChild(questionAnchor);
       var questionPanelHeading = document.createElement('div');
       questionPanelHeading.className = 'panel-heading panel-heading-faq';
       var questionHeading = document.createElement('h4');
