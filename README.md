@@ -1,26 +1,20 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Landing Page](http://startbootstrap.com/template-overviews/landing-page/)
+# KWIC Microsite
 
-[Landing Page](http://startbootstrap.com/template-overviews/landing-page/) is a multipurpose landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+## Running the Microsite locally for testing
 
-## Getting Started
+0. Clone or fork the repo locally.
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+0. In the top level directory, start a HTTP server that can serve from files in place. For example:
+    * Using Jekyll:
 
-## Bugs and Issues
+        `$ jekyll serve --port 4000`
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-landing-page/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/landing-page/).
+    * Using Python:
 
-## Creator
+        `$ python -m SimpleHTTPServer 4000`
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+0. Using a browser, go to [http://localhost:4000/kwic/](http://localhost:4000/kwic/)
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+## Deploying the Microsite to kaazing.com
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-landing-page/blob/gh-pages/LICENSE) license.
+0. Copy the files to the server ... TBD
