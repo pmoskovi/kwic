@@ -7,7 +7,7 @@
 0. In the top level directory, start a HTTP server that can serve from files in place. For example:
     * Using Jekyll:
 
-        `$ jekyll serve --port 4000`
+        `$ jekyll serve --watch --port 4000`
 
     * Using Python:
 

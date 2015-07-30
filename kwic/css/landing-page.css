@@ -5,8 +5,13 @@
  */
 
 body, html {
+/* Not sure this is needed
   width: 100%;
   height: 100%;
+  */
+}
+body {
+  padding-top: 50px; /* For the Bootstrap fixed navbar */
 }
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15,6 +20,11 @@ body, h1, h2, h3, h4, h5, h6 {
 .topnav {
   font-size: 14px;
 }
+
+.navbar-brand img {
+  margin-top: -4px;
+}
+
 .lead {
   font-size: 18px;
   font-weight: 400;
@@ -166,6 +176,7 @@ body, h1, h2, h3, h4, h5, h6 {
 footer {
   padding: 50px 0;
   background-color: #f8f8f8;
+  min-height: 200px;
 }
 p.copyright {
   margin: 15px 0 0;
@@ -217,4 +228,15 @@ code {
     color: #555;
     background-color: #FFFDDB;
     border-radius: 4px;
+}
+
+/*
+To work around Bootstrap fixed header.
+See: http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+*/
+a.anchor {
+  display: block;
+  visibility: hidden;
+  position: relative;
+  top: -50px;
 }
