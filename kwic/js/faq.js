@@ -5,11 +5,11 @@ var faqData = {
       question: 'What is Kaazing KWIC for Active Directory?',
       answer: 'Your boss wants your new application running on Azure NOW, but it needs to securely connect to your existing infrastructure. Setting up a site-to-site VPN between your data center and the public cloud is going to take way too long. KWIC (KAAZING WebSocket Intercloud Connect), pronounced as quick, delivers simple, secure, hybrid cloud connectivity. No hardware required.'
     }, {
-      question: 'How much does it cost?',
-      answer: 'It costs about $42.00.'
+      question: 'How much does KWIC for Active Directory cost?',
+      answer: 'It\'s free, and it always will be.'
     }, {
-      question: 'What do I need to get started using KWIK for Active Directory?',
-      answer: '<img class="img-responsive" src="img/vpa1.png"><br/><br/>Getting started with KWIK for Active Directory is easy. All you need is two Ubuntu systems configured to communicate with each other. One running in the Microsoft Azure cloud and the other one running on-premises or in your private cloud.'
+      question: 'What do I need to get started using KWIC for Active Directory?',
+      answer: '<img class="img-responsive" src="img/vpa1.png"><br/><br/>Getting started with KWIC for Active Directory is easy. All you need is two Ubuntu systems configured to communicate with each other. One running in the Microsoft Azure cloud and the other one running on-premises or in your private cloud.'
     }]
   }, {
     section: 'Configuration',
@@ -22,22 +22,29 @@ var faqData = {
     }, {
       question: 'During installation I entered the wrong login or password, while retrieving the trust store. Now what?',
       answer: 'After three attempts the login process will fail and you will be given the option to enter new credentials or quit from the trust store retrieval function.'
-    }, {
-      question: 'How can I review the installation script?',
-      answer: ''
-    }, {
-      question: 'What if I need to update my Active Directory configuration?',
-      answer: ''
-    }]
+    }
+    // ,
+    // {
+    //   question: 'How can I review the installation script?',
+    //   answer: ''
+    // },
+    //  {
+    //   question: 'What if I need to update my Active Directory configuration?',
+    //   answer: ''
+    // }
+  ]
   }, {
     section: 'Security',
     faqList: [{
       question: 'What is the trust store, and why do I need one?',
       answer: '<ul><li>The trust store is a file containing certificates for hosts and certificate authorities trusted by the KAAZING Gateway.</li><li>In order to connect to a back-end server using TLS/SSL, the KAAZING Gateway must have the certificate for the host name of the back-end server in the trust store.</li></ul>'
-    }, {
-      question: 'How do I configure SSL/TLS between the on-premise KAAZING gateway and my Active Directory server?',
-      answer: ''
-    }]
+    }
+    // ,
+    //  {
+    //   question: 'How do I configure SSL/TLS between the on-premise KAAZING gateway and my Active Directory server?',
+    //   answer: ''
+    // }
+  ]
   }, {
     section: 'Testing',
     faqList: [{
