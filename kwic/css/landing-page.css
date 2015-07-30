@@ -47,6 +47,12 @@ body, h1, h2, h3, h4, h5, h6 {
   background-position: top center;
   background-size: cover;
 }
+
+.vpa.intro-header {
+  height: 200px;
+  padding-top: 0;
+}
+
 .intro-message {
   position: relative;
   padding-top: 8%;
@@ -62,6 +68,12 @@ body, h1, h2, h3, h4, h5, h6 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   font-size: 3em;
 }
+
+.vpa .intro-message {
+  padding-top: 0;
+  margin-top: 40px;
+}
+
 .intro-divider {
   width: 400px;
   border-top: 1px solid #f8f8f8;
@@ -84,6 +96,10 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .product-message > a:hover {
   color: #f47c31;
+}
+
+.content-section-a h2, .content-section-b h2 {
+  margin-top: 0;
 }
 
 @media(max-width:767px) {
