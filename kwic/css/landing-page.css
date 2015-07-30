@@ -86,6 +86,10 @@ body, h1, h2, h3, h4, h5, h6 {
   color: #f47c31;
 }
 
+.content-section-a h2, .content-section-b h2 {
+  margin-top: 0;
+}
+
 @media(max-width:767px) {
   .intro-message {
     padding-bottom: 15%;
