@@ -42,7 +42,7 @@ var faqData = {
     section: 'Testing',
     faqList: [{
       question: 'How can I test if the gateways are talking to each other?',
-      answer: '<ul><li>To test end-to-end connectivity, you can issue an Active Directory query from a client application, such as <em>ldapsearch</em>. <br/><img class="img-responsive" src="img/vpatest2.png"></li><li>An example query from your on-premise gateway to your cloud gateway running on Azure would be:<blockquote>ssh azureuser@mycloudvpa.cloudapp.net \'ldapsearch -x -h localgw -p 389 -s base -b "" "objectclass=*" vendorVersion\'</blockquote></li>'
+      answer: '<ul><li>To test end-to-end connectivity, you can issue an Active Directory query from a client application, such as <em>ldapsearch</em>. <br/><img class="img-responsive" src="img/vpatest2.png"></li><li>An example query from your on-premise gateway to your cloud gateway running on Azure would be:<br><code>ssh azureuser@mycloudvpa.cloudapp.net \'ldapsearch -x -h localgw -p 389 -s base -b "" "objectclass=*" vendorVersion\'</code></li>'
     }]
   }]
 };
