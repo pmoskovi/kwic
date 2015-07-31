@@ -212,6 +212,10 @@ p.copyright {
      margin: 20px;
  }
 
+ #faqContainer a {
+  font-weight: 400;
+ }
+
 .panel-default > .panel-heading-faq {
   background-color: white;
   border-color: white;
