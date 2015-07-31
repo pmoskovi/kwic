@@ -30,13 +30,10 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 .intro-header {
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-top: 20px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   text-align: center;
-  color: #f8f8f8;
-  color: #f47c31;
-  color: #f85d36;
   color: #f47c31;
 
   background-color: #4c89b1;
@@ -55,8 +52,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .intro-message {
   position: relative;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 .intro-message > h1 {
   margin: 0;
