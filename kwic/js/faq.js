@@ -6,7 +6,7 @@ var faqData = {
       answer: 'Your boss wants your new application running on Azure NOW, but it needs to securely connect to your existing infrastructure. Setting up a site-to-site VPN between your data center and the public cloud is going to take way too long. KWIC (KAAZING WebSocket Intercloud Connect), pronounced as quick, delivers simple, secure, hybrid cloud connectivity. No hardware required.'
     }, {
       question: 'How much does KWIC for Active Directory cost?',
-      answer: 'It\'s free, and it always will be.'
+      answer: 'It\'s free, and it always will be - if you sign up today.'
     }, {
       question: 'What do I need to get started using KWIC for Active Directory?',
       answer: '<img class="img-responsive" src="img/vpa1.png"><br/><br/>Getting started with KWIC for Active Directory is easy. All you need is two Ubuntu systems configured to communicate with each other. One running in the Microsoft Azure cloud and the other one running on-premises or in your private cloud.'
