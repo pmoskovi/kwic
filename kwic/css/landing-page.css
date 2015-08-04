@@ -217,10 +217,14 @@ p.copyright {
   background-color: white;
   border-color: white;
   color: #222;
+  padding-left: 0;
 }
 
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
   border-top-color: orange;
+}
+
+.panel-heading {
 }
 
 .panel-faq {
@@ -229,6 +233,7 @@ p.copyright {
 
 .panel-body {
   font-weight: 400;
+  padding-left: 0;
 }
 
 .ul {
