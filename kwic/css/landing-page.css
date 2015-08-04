@@ -45,7 +45,7 @@ body, h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-.vpa.intro-header {
+.kwic.intro-header {
   height: 200px;
   padding-top: 0;
 }
@@ -66,7 +66,7 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 3em;
 }
 
-.vpa .intro-message {
+.kwic .intro-message {
   padding-top: 0;
   margin-top: 40px;
 }

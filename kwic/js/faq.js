@@ -9,7 +9,7 @@ var faqData = {
       answer: 'It\'s free, and it always will be - if you sign up today.'
     }, {
       question: 'What do I need to get started using KWIC for Active Directory?',
-      answer: '<img class="img-responsive" src="img/vpa1.png"><br/><br/>Getting started with KWIC for Active Directory is easy. All you need is two Ubuntu systems configured to communicate with each other. One running in the Microsoft Azure cloud and the other one running on-premises or in your private cloud.'
+      answer: '<img class="img-responsive" src="img/kwic1.png"><br/><br/>Getting started with KWIC for Active Directory is easy. All you need is two Ubuntu systems configured to communicate with each other. One running in the Microsoft Azure cloud and the other one running on-premises or in your private cloud.'
     }]
   }, {
     section: 'Configuration',
@@ -49,7 +49,7 @@ var faqData = {
     section: 'Testing',
     faqList: [{
       question: 'How can I test if the gateways are talking to each other?',
-      answer: '<ul><li>To test end-to-end connectivity, you can issue an Active Directory query from a client application, such as <em>ldapsearch</em>. <br/><img class="img-responsive" src="img/vpatest2.png"></li><li>An example query from your on-premise gateway to your cloud gateway running on Azure would be:<br><code>ssh azureuser@mycloudvpa.cloudapp.net \'ldapsearch -x -h localgw -p 389 -s base -b "" "objectclass=*" vendorVersion\'</code></li>'
+      answer: '<ul><li>To test end-to-end connectivity, you can issue an Active Directory query from a client application, such as <em>ldapsearch</em>. <br/><img class="img-responsive" src="img/kwictest2.png"></li><li>An example query from your on-premise gateway to your cloud gateway running on Azure would be:<br><code>ssh azureuser@mycloudvpa.cloudapp.net \'ldapsearch -x -h localgw -p 389 -s base -b "" "objectclass=*" vendorVersion\'</code></li>'
     }]
   }]
 };
