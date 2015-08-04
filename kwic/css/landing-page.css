@@ -39,7 +39,7 @@ body, h1, h2, h3, h4, h5, h6 {
   background-color: #4c89b1;
   background-image:
   /* linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), */
-  url(http://www.bettererpsystems.com/assets/images/clouderp/topbanner.jpg);
+  url(../img/topbanner.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
